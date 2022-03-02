@@ -33,13 +33,70 @@
         {% if serviceName %} {{ serviceName }} {% endif %}
       </h1>
 
-      <p>Use this service to:</p>
+      <p>Use this service AMEET to:</p>
 
       <ul class="govuk-list govuk-list--bullet">
         <li>do something</li>
         <li>update your name, address or other details</li>
         <li>do something else</li>
       </ul>
+
+      <details class="govuk-details" data-module="govuk-details">
+        <summary class="govuk-details__summary">
+          <span class="govuk-details__summary-text">
+            Help with nationality
+          </span>
+        </summary>
+        <div class="govuk-details__text">
+          We need to know your nationality so we can work out which elections you’re entitled to vote in. If you cannot provide your nationality, you’ll have to send copies of identity documents through the post.
+        </div>
+      </details>
+
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h1 class="govuk-fieldset__heading">
+              When was your passport issued?
+            </h1>
+          </legend>
+          <div id="passport-issued-hint" class="govuk-hint">
+            For example, 27 3 2007
+          </div>
+          <div class="govuk-date-input" id="passport-issued">
+            <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+                  Day
+                </label>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="passport-issued-day" type="text" pattern="[0-9]*" inputmode="numeric">
+              </div>
+            </div>
+            <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                  Month
+                </label>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="passport-issued-month" type="text" pattern="[0-9]*" inputmode="numeric">
+              </div>
+            </div>
+            <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+                  Year
+                </label>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="passport-issued-year" type="text" pattern="[0-9]*" inputmode="numeric">
+              </div>
+            </div>
+          </div>
+      
+        </fieldset>
+      </div>
+
+
+
+
+
 
       <p>Registering takes around 5 minutes.</p>
 
